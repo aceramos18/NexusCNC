@@ -1,0 +1,140 @@
+@import url('reset.css');
+
+/* NEXUS CNC CSS Document
+--------------------------------------------------------- */
+
+/* Colors
+
+yellow:			fad114
+blue:			1e429b
+red:			d02129
+
+--------------------------------------------------------- */
+
+
+/* Quick Classes
+--------------------------------------------------------- */
+
+.clear					{clear: both;}
+.fleft					{float: left;}
+.fright					{float: right;}
+
+/* Global Formatting
+--------------------------------------------------------- */
+
+body 					{background: url(../images/bg-body.jpg) top left repeat #fff; font: 12px/1 Arial, Helvetica, sans-serif; color: #444;}
+a						{color: #1e429b; outline: none;}
+a:hover					{color: #fad114;}
+a img, img				{border: 0;}
+p,ul,ol					{margin-bottom:0.8em;}
+p,li					{line-height:1.2;}
+h1,h2,h3,h4,h5,h6		{font-weight: normal; margin-bottom: 0.5em;}
+strong, b				{font-weight: bold;}
+em, i					{font-style: italic;}
+
+/* Text Formatting
+--------------------------------------------------------- */
+
+#content h2				{color: #1e429b; font-size: 24px; font-weight: bold; text-transform: uppercase;}
+#content h3				{color: #1e429b; font-size: 18px; font-weight: normal; text-transform: uppercase; border-bottom: 1px dashed #ccc; margin: 20px 0 10px; padding: 0 0 5px;}
+#content .contentList	{padding: 0 0 0 20px; list-style-type: disc;}
+#content a:hover		{color: #666; text-decoration: none;}
+
+/* Container Formatting
+--------------------------------------------------------- */
+
+#header					{width: 100%; height: 51px; background: url(../images/bg-header.jpg) top left repeat-x;}
+#content				{width: 100%; height: auto; background: url(../images/bg-main.jpg) top left repeat; padding: 40px 0;}
+#footer					{width: 100%; height: auto;}
+.container				{margin: 0 auto; width: 960px; height: auto;}
+
+/* Header Formatting
+--------------------------------------------------------- */
+
+#logo					{float: left; margin-bottom: 0;}
+#logo a					{width: auto; height: 22px; background: url(../images/icon-logo.png) left center no-repeat; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin: 7px 0 0; padding: 15px 0 0 60px;}
+
+/* Menu Formatting
+--------------------------------------------------------- */
+
+#menu					{float: right; height: 50px; list-style: none; margin-bottom: 0; padding: 12px 0 0;}
+#menu li				{float: left;}
+#menu li a				{text-shadow: 0 1px #000; color: #fff; text-decoration: none; display: block; padding: 5px 10px;}
+#menu li a:hover		{color: #fad114;}
+
+body.home #menu li a.home,
+body.about #menu li a.about,
+body.services #menu li a.services,
+body.contact #menu li a.contact
+						{color: #fff; background: #1e429b; border: 1px solid #002658; text-shadow: 0 1px #000; box-shadow: 0 1px #3e3e3e; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+
+/* Content Formatting
+--------------------------------------------------------- */
+
+/* Home Featured Box */
+
+#featuredOuter			{width: 940px; height: auto; background: #ccc; border-radius: 5px; box-shadow: 0 1px #fff; -moz-box-shadow: 0 1px #fff; -webkit-box-shadow: 0 1px #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; padding: 10px; margin: 0 0 20px;}
+#featuredInner			{width: 918px; height: auto; background: #fdd718; border: 1px solid #afafaf; box-shadow: 0 1px #e0e0e0; -moz-box-shadow: 0 1px #e0e0e0; -webkit-box-shadow: 0 1px #e0e0e0; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; padding: 10px;}
+#featuredLeft			{position: relative; width: 438px; height: auto; float: left; margin: 10px;}
+#featuredRight			{position: relative; width: 438px; height: auto; float: right; margin: 10px;}
+#featuredInner img		{border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+.featuredInfo			{position: absolute; left: 10px; bottom: 10px; width: 398px; height: 30px; background: url(../images/bg-transparent.png) top left repeat; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; padding: 10px; font-size: 11px;}
+.featuredInfo p			{line-height: 1; margin-bottom: 0;}
+.featuredInfo a			{text-decoration: none;}
+.featuredInfo a:hover	{color: #999;}
+
+/* Content Containers */
+
+.contentHalfLeft		{float: left; width: 470px; height: auto; margin: 0 20px 0 0;}
+.contentHalfRight		{float: left; width: 470px; height: auto;}
+
+/* Services Page Formatting */
+
+.serviceList 			{font-size: 11px; margin: 0 0 20px;}
+.serviceList li			{border-bottom: 1px solid #ccc; padding: 5px 0;}
+.serviceList li:hover	{background: #eaeaea; border-bottom: 1px solid #fff;}
+.serviceList li span em	{color: #666;}
+.serviceItemTitle		{background: #ffd; padding: 2px;}
+.machineImg				{border: 1px solid #999; margin: 0 0 10px; box-shadow: 0 1px 2px #999; -moz-box-shadow: 0 1px 2px #999; -webkit-box-shadow: 0 1px 2px #999; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+
+/* Contact Page Formatting */
+
+#contactLeft 			{float: left; width: 200px; margin: 0 20px 0 0;}
+#contactRight 			{float: left; width: 740px;}
+#contactRight iframe	{margin: 0 0 10px; box-shadow: 0 1px 3px #666; -moz-box-shadow: 0 1px 3px #666; -webkit-box-shadow: 0 1px 3px #666;}
+.googlemaplink a		{font-size: 11px;}
+
+/* Footer Formatting
+--------------------------------------------------------- */
+
+#footer 				{min-height: 100px; color: #999; font-size: 11px; padding: 20px 0;}
+#copyright				{float: left; line-height: 1.2;}
+#copyright a			{color: #ccc;}
+#copyright a:hover		{color: #fad114; text-decoration: none;}
+#footerLinks			{float: right;}
+#footerLinks li			{float: left;}
+#footerLinks li a		{color: #ccc; text-decoration: none; padding: 0 10px; border-right: 1px solid #333;}
+#footerLinks li a:hover	{color: #fad114;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
